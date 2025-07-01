@@ -1,34 +1,43 @@
-#!/usr/bin/env bash
-# Deploy current main/master branch to gh-pages for GitHub Pages hosting
+#!/bin/bash
+
+# Stop on error
 set -e
 
-GREEN=$(tput setaf 2)
-RED=$(tput setaf 1)
-RESET=$(tput sgr0)
+# Get current date for commit message
+NOW=$(date +"%Y-%m-%d %H:%M:%S")
 
+# Set repo info
+REPO="TheeKingZa/SHE_Films"
 BRANCH="gh-pages"
+BUILD_DIR="."
+TEMP_DIR=$(mktemp -d)
 
-printf "${GREEN}Building static site ...${RESET}\n"
-# Nothing to build, but you might run minifiers here
+echo "📦 Building static site..."
 
-printf "${GREEN}Pushing to %s branch ...${RESET}\n" "$BRANCH"
+# Copy everything to temp folder (excluding .git folder)
+rsync -av --exclude='.git' "$BUILD_DIR/" "$TEMP_DIR"
 
-# Save current branch name
-CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+# Switch to temp folder
+cd "$TEMP_DIR"
 
-# Delete old gh-pages (locally) if it exists
-if git show-ref --verify --quiet refs/heads/$BRANCH; then
-  git branch -D $BRANCH
-fi
+# Add .nojekyll so GitHub Pages doesn’t ignore folders starting with _
+touch .nojekyll
 
-# Create orphan gh-pages, copy tracked files, push
-git checkout --orphan $BRANCH
-git add -A
-git commit -m "Deploy to $BRANCH `date +%Y-%m-%d`"
-git push -f origin $BRANCH
+# Initialize new git repo in temp
+git init
+git checkout -b $BRANCH
 
-printf "${GREEN}✔ Deployment complete!${RESET}\n"
-printf "${GREEN}Your site should soon be live at: https://$(git config --get remote.origin.url | sed -E 's/.*github.com[:/](.*)\.git/\1/')/ ${RESET}\n"
+# Set Git author name only
+git config user.name "Pule Mathikha"
+# Email line is removed as requested
 
-# Return to original branch
-git checkout "$CURRENT_BRANCH"
+# Add remote and commit
+git remote add origin https://github.com/$REPO.git
+git add .
+git commit -m "Deploy to $BRANCH at $NOW"
+
+# Push forcefully to gh-pages
+git push --force origin $BRANCH
+
+echo "✅ Deployment complete!"
+echo "🌍 Site should be live at: https://theekingza.github.io/SHE_Films/"
