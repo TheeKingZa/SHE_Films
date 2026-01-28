@@ -2,74 +2,447 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>South Hemisphere Entertainment</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about South Hemisphere Entertainment. Meet our talented team of photographers, cinematographers, and editors dedicated to capturing your story.">
+  <meta name="keywords" content="about, team, crew, photographers, cinematographers, editors, South Hemisphere Entertainment">
+  
+  <title>About Us | South Hemisphere Entertainment</title>
+  
   <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body style="
-        display: flex;
-        flex-direction: column;
-        height : 100vh;"
-        >
+<body>
+
+<!-- ===== HEADER & NAVIGATION ===== -->
 <header class="navbar">
-  <a class="logo" href="index.html">CREW</a>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle"><label for="nav-toggle" class="burger">☰</label>
-  <nav><ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-  </ul></nav>
+  <div class="navbar-container">
+    <a class="logo-brand" href="index.html">
+      <div class="logo-icon">
+          <i class="fas fa-camera"></i>
+      </div>
+      <div class="logo-text">
+        <h1>ABOUT</h1>
+        <p>South Hemisphere Entertainment</p>
+      </div>
+    </a>
+
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="about.html" class="active">...</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<section class="page-head"><h1>Team Members</h1></section>
-
-<section class="team">
-  <!--  -->
-  <article>
-    <div>
-
-      <img src="img/Crew/KatlehoMsimanga.jpeg" alt="Katleho Msimanga">
-    </div>
-    <h3>Katleho Msimanga</h3>
-    <p>Lead Photographer • 13 yrs experience • NatGeo alumna.</p>    
-    <p>
-      
-          <!-- Socials -->
-    <div class="socials">
-      <a href="https://instagram.com/southhemisphereent" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://facebook.com/southhemisphereent" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://twitter.com/southhemisphere" target="_blank" aria-label="Twitter">
-      <i class="fab fa-x-twitter"></i>
-    </a>
-    <a href="https://youtube.com/@southhemisphere" target="_blank" aria-label="YouTube">
-      <i class="fab fa-youtube"></i>
-    </a>
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header">
+  <div class="page-header-content">
+    <h1>Our Story</h1>
+    <p>Passionate creators capturing life's most meaningful moments</p>
   </div>
-    <!-- Socials Ends -->
-    </p>
-
-</article>
-
-<!--   -->
-  <article>
-    <img src="img/Crew/Lerato Malepe.jpeg" alt="Lerato Malepe">
-    <h3>Lerato Malepe</h3>
-    <p>Cinematographer • Drone specialist • Loves sunsets.</p>
-  </article>
-  
-  <!--  -->
-    <article><img src="img/Crew/Pule Mbele.jpeg" alt="Pule Mbele">
-    <h3>Pule Mbele</h3><p>Colourist & Editor • Turning footage into magic since 2011.</p></article>
 </section>
 
+<!-- ===== ABOUT INTRO SECTION ===== -->
+<section class="about-intro">
+  <div class="about-intro-container">
+    <div class="intro-content">
+      <h2>Who We Are</h2>
+      <p>South Hemisphere Entertainment is more than just a photography and videography company. We are storytellers, artists, and visual creators dedicated to preserving the moments that matter most in your life.</p>
+      <p>Founded with a passion for cinematic excellence, we've spent years perfecting our craft to deliver stunning visual content that exceeds expectations. Whether it's a wedding, corporate event, or personal portrait session, we approach every project with the same level of dedication and artistry.</p>
+      <p>Our team combines decades of combined experience with a modern creative vision, using cutting-edge equipment and innovative techniques to bring your vision to life.</p>
+      
+      <div class="intro-cta">
+        <a href="contact.html" class="btn-primary">
+          <span>Book a Consultation</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="intro-image">
+      <div class="image-placeholder">
+        <i class="fas fa-camera-retro"></i>
+      </div>
+    </div>
+  </div>
+</section>
 
-<footer>
-  South Hemisphere Entertainment © <span id="year"></span>
+<!-- ===== MISSION & VALUES SECTION ===== -->
+<section class="mission-values">
+  <div class="mission-values-container">
+    <h2>Our Mission & Values</h2>
+    
+    <div class="mission-grid">
+      <!-- Mission -->
+      <div class="mission-card">
+        <div class="mission-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3>Our Mission</h3>
+        <p>To capture the essence of human connection and emotion through stunning visual storytelling. We believe in creating imagery that transcends time, allowing you to relive your most precious moments for generations to come.</p>
+      </div>
+
+      <!-- Vision -->
+      <div class="mission-card">
+        <div class="mission-icon">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Our Vision</h3>
+        <p>To be recognized as the leading creative studio in South Africa, known for our cinematic excellence, innovative approach, and unwavering commitment to exceeding client expectations in every project.</p>
+      </div>
+
+      <!-- Values -->
+      <div class="mission-card">
+        <div class="mission-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Our Values</h3>
+        <p>Authenticity, creativity, excellence, and integrity guide everything we do. We value genuine connections with our clients and are committed to delivering art that tells your unique story with honesty and beauty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM SECTION ===== -->
+<section class="team-section" id="about">
+  <div class="team-container">
+    <h2>Meet Our Team</h2>
+    <p class="team-subtitle">Talented professionals dedicated to bringing your vision to life</p>
+
+    <div class="team-grid">
+      <!-- Team Member 1 -->
+      <div class="team-member">
+        <div class="member-image">
+          <img src="img/Crew/KatlehoMsimanga.jpeg" alt="Katleho Msimanga">
+          <div class="member-overlay">
+            <div class="member-socials">
+              <a href="https://instagram.com/southhemisphereent" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://facebook.com/southhemisphereent" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/southhemisphere" target="_blank" aria-label="Twitter">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://youtube.com/@southhemisphere" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Katleho Msimanga</h3>
+          <p class="member-title">Lead Photographer</p>
+          <p class="member-bio">With 13 years of professional experience and recognition from National Geographic, Katleho brings an exceptional eye for detail and a passion for capturing authentic human moments. Her work spans across weddings, travel, portraits, and documentary photography.</p>
+          <div class="member-expertise">
+            <span class="expertise-tag">Photography</span>
+            <span class="expertise-tag">Portraits</span>
+            <span class="expertise-tag">Documentary</span>
+            <span class="expertise-tag">Travel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-member">
+        <div class="member-image">
+          <img src="img/Crew/Lerato Malepe.jpeg" alt="Lerato Malepe">
+          <div class="member-overlay">
+            <div class="member-socials">
+              <a href="https://instagram.com/southhemisphereent" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://facebook.com/southhemisphereent" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/southhemisphere" target="_blank" aria-label="Twitter">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://youtube.com/@southhemisphere" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Lerato Malepe</h3>
+          <p class="member-title">Cinematographer & Drone Specialist</p>
+          <p class="member-bio">Lerato is a visionary cinematographer with a specialization in aerial videography and drone footage. With a particular love for golden hour magic and cinematic storytelling, Lerato transforms ordinary moments into extraordinary visual narratives that captivate and inspire.</p>
+          <div class="member-expertise">
+            <span class="expertise-tag">Videography</span>
+            <span class="expertise-tag">Drone Footage</span>
+            <span class="expertise-tag">Cinematic</span>
+            <span class="expertise-tag">Editing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-member">
+        <div class="member-image">
+          <img src="img/Crew/Pule Mbele.jpeg" alt="Pule Mbele">
+          <div class="member-overlay">
+            <div class="member-socials">
+              <a href="https://instagram.com/southhemisphereent" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://facebook.com/southhemisphereent" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/southhemisphere" target="_blank" aria-label="Twitter">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://youtube.com/@southhemisphere" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Pule Mbele</h3>
+          <p class="member-title">Colourist & Editor</p>
+          <p class="member-bio">Pule is the creative force behind our post-production magic. With expertise in color grading, video editing, and advanced digital techniques since 2011, Pule ensures every final product is a polished masterpiece that exceeds expectations.</p>
+          <div class="member-expertise">
+            <span class="expertise-tag">Color Grading</span>
+            <span class="expertise-tag">Editing</span>
+            <span class="expertise-tag">Post-Production</span>
+            <span class="expertise-tag">Motion Graphics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== JOURNEY SECTION ===== -->
+<section class="journey-section">
+  <div class="journey-container">
+    <h2>Our Journey</h2>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="year">2009</span>
+        </div>
+        <div class="timeline-content">
+          <h4>The Beginning</h4>
+          <p>Katleho started her journey in photography with a passion for capturing raw, authentic moments. What began as a personal project quickly evolved into a professional pursuit.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="year">2012</span>
+        </div>
+        <div class="timeline-content">
+          <h4>Growing the Team</h4>
+          <p>Recognizing the potential for something greater, Lerato joined the team, bringing expertise in videography and a fresh creative perspective to our offerings.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="year">2015</span>
+        </div>
+        <div class="timeline-content">
+          <h4>National Recognition</h4>
+          <p>Katleho's work was featured in National Geographic, putting South Hemisphere Entertainment on the map and establishing us as a premier creative studio.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="year">2018</span>
+        </div>
+        <div class="timeline-content">
+          <h4>Complete the Crew</h4>
+          <p>Pule joined as our master editor and colorist, completing our dream team and allowing us to offer end-to-end creative solutions for all our clients.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="year">2020</span>
+        </div>
+        <div class="timeline-content">
+          <h4>Evolution & Innovation</h4>
+          <p>We invested in cutting-edge technology including drone equipment, 4K cameras, and advanced editing suites to stay at the forefront of visual storytelling.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="year">2024</span>
+        </div>
+        <div class="timeline-content">
+          <h4>Present Day</h4>
+          <p>With 500+ projects completed and 200+ happy clients, we continue to push creative boundaries and deliver cinematic excellence for every project we undertake.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS SECTION ===== -->
+<section class="stats-section">
+  <div class="stats-container">
+    <div class="stat-item">
+      <h3 class="stat-number">36+</h3>
+      <p>Years Combined Experience</p>
+    </div>
+    <div class="stat-item">
+      <h3 class="stat-number">500+</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-item">
+      <h3 class="stat-number">200+</h3>
+      <p>Happy Clients</p>
+    </div>
+    <div class="stat-item">
+      <h3 class="stat-number">15+</h3>
+      <p>Awards & Recognition</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="testimonials-section">
+  <div class="testimonials-container">
+    <h2>What Our Clients Say</h2>
+    <p class="testimonials-subtitle">Real feedback from real clients</p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"SHE captured our wedding day beautifully. Every moment was preserved with such artistry and professionalism. We couldn't be happier with the results!"</p>
+        <p class="testimonial-author">— Sarah & James, Wedding Couple</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"The team's professionalism and creativity transformed our corporate event footage into something truly cinematic. Highly recommended!"</p>
+        <p class="testimonial-author">— David Mthembu, Event Organizer</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Working with SHE for our travel photography was amazing. They captured the essence of our adventure in ways we couldn't have imagined."</p>
+        <p class="testimonial-author">— Amanda & Mike, Travel Enthusiasts</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"The drone footage they provided for our real estate project was absolutely stunning. It really showcased our properties in the best light."</p>
+        <p class="testimonial-author">— Robert Thompson, Real Estate Developer</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"The quality of work is exceptional. The attention to detail and creative vision they bring to every project is truly outstanding."</p>
+        <p class="testimonial-author">— Lisa Johnson, Brand Manager</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"SHE went above and beyond our expectations. From start to finish, their communication and professionalism were impeccable."</p>
+        <p class="testimonial-author">— Nicholas Oluwande, Entrepreneur</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <h2>Ready to Work With Us?</h2>
+  <p>Let's create something extraordinary together</p>
+  <a href="contact.html" class="btn-cta">
+    <span>Get in Touch</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>SHE</h4>
+      <p>South Hemisphere Entertainment</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="https://instagram.com/southhemisphereent" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/southhemisphereent" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/southhemisphere" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://youtube.com/@southhemisphere" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> South Hemisphere Entertainment. All rights reserved.</p>
+  </div>
 </footer>
+
 <script src="js/main.js"></script>
+<script src="js/about.js"></script>
+
 </body>
 </html>

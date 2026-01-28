@@ -2,58 +2,321 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>SHE – Photography & Film</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SHE - South Hemisphere Entertainment. Cinematic visuals for weddings, events, portraits, travel, and more. Professional photography and film services.">
+  <meta name="keywords" content="photography, videography, weddings, events, portraits, cinematic, South Hemisphere Entertainment">
+  <meta name="author" content="SHE - South Hemisphere Entertainment">
+  
+  <title>SHE – Photography & Film | Cinematic Visuals for Life's Best Moments</title>
+  
   <link rel="stylesheet" href="css/root.css">
-  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="./css/about.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+<!-- ===== HEADER & NAVIGATION ===== -->
 <header class="navbar">
-  <!-- <h1>South Hemisphere Entertainment</h1> -->
+  <div class="navbar-container">
+    <a class="logo-brand" href="./index.html">
+      <div class="logo-icon">
+          <i class="fas fa-camera"></i>
+      </div>
+      <div class="logo-text">
+        <h1>SHE</h1>
+        <p>South Hemisphere Entertainment</p>
+      </div>
+    </a>
 
-  <!-- Responsive burger -->
-  <input type="checkbox" id="nav-toggle" class="nav-toggle">
-  <label for="nav-toggle" class="burger">☰</label>
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about.html">Crew</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="cta-nav">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
+<!-- ===== HERO SECTION ===== -->
 <section class="hero">
-  <!-- Logo Text-->
-<div class="img-logo-text">
-</div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">Cinematic Visuals for Life's Best Moments</h1>
+      <p class="hero-subtitle">From intimate weddings to world tours, we craft stories that captivate and inspire.</p>
+      <a href="./contact.html" class="cta-button">
+        <span>Book Your Shoot</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        <i class="fas fa-film"></i>
+      </div>
+    </div>
+  </div>
 
-  <h1>Cinematic visuals for life’s best moments</h1>
-  <p>From weddings to world-tours, we capture stories that matter.</p>
-  <a class="cta" href="contact.html">Book a shoot</a>
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
 </section>
 
-<section id="portfolio" class="gallery">
-  <!-- 6 sample thumbnails; replace src with real photos -->
-  <figure><img src="img/weddings.jpg" alt="Wedding"><figcaption>Weddings</figcaption></figure>
-  <figure><img src="img/liveEvents.jpg" alt="Concert"><figcaption>Live Events</figcaption></figure>
-  <figure><img src="img/portraits.jpg" alt="Portrait"><figcaption>Portraits</figcaption></figure>
-  <figure><img src="img/travel.jpg" alt="Travel"><figcaption>Travel</figcaption></figure>
-  <figure><img src="img/food.jpg" alt="Food"><figcaption>Food</figcaption></figure>
-  <figure><img src="img/product.jpg" alt="Product"><figcaption>Products</figcaption></figure>
-  
+<!-- ===== FEATURED WORK SECTION ===== -->
+<section class="featured-work">
+  <div class="featured-work-header">
+    <h2>Featured Work</h2>
+    <p class="featured-subtitle">Explore our latest projects and creative excellence</p>
+  </div>
+
+    <!-- Featured Item 1 - New -->
+    <div class="featured-item featured-item-wide">
+      <div class="featured-image-wrapper">
+        <img src="./img/Ent_logo/logo.png" alt="Corporate Events">
+        <div class="featured-badge">SHOWCASE</div>
+      </div>
+      <div class="featured-overlay">
+        <div class="overlay-content">
+          <h3>Corporate Events</h3>
+          <p>Professional coverage for business moments</p>
+          <div class="overlay-meta">
+            <span class="meta-item">
+              <i class="fas fa-briefcase"></i> Business
+            </span>
+            <span class="meta-item">
+              <i class="fas fa-film"></i> Videography
+            </span>
+          </div>
+        
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- View All Button -->
+  <div class="featured-cta">
+    <a href="index.html#portfolio" class="btn-view-all">
+      <span>View All Projects</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
 </section>
 
+<!-- ===== PORTFOLIO SECTION ===== -->
+<section id="portfolio" class="gallery-section">
+  <h2>Our Portfolio</h2>
+  <div class="gallery">
+    <figure class="gallery-item" data-category="weddings">
+      <img src="img/weddings.jpg" alt="Wedding Photography">
+      <figcaption>
+        <h3>Weddings</h3>
+        <p>Timeless & Elegant</p>
+      </figcaption>
+    </figure>
 
-<!-- Logo -->
-<div class="img-logo">
-</div>
-<footer>
-  South Hemisphere Entertainment © <span id="year"></span>
+    <figure class="gallery-item" data-category="events">
+      <img src="img/liveEvents.jpg" alt="Live Events">
+      <figcaption>
+        <h3>Live Events</h3>
+        <p>Dynamic & Energetic</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-category="portraits">
+      <img src="img/portraits.jpg" alt="Portrait Photography">
+      <figcaption>
+        <h3>Portraits</h3>
+        <p>Authentic & Personal</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-category="travel">
+      <img src="img/travel.jpg" alt="Travel Photography">
+      <figcaption>
+        <h3>Travel</h3>
+        <p>Adventurous & Inspiring</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-category="food">
+      <img src="img/food.jpg" alt="Food Photography">
+      <figcaption>
+        <h3>Food & Lifestyle</h3>
+        <p>Delicious & Vibrant</p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item" data-category="product">
+      <img src="img/product.jpg" alt="Product Photography">
+      <figcaption>
+        <h3>Products</h3>
+        <p>Professional & Polished</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-heart"></i>
+      </div>
+      <h3>Wedding Photography & Videography</h3>
+      <p>Capture every emotional moment of your special day. Full-day coverage with cinematic editing and professional prints.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Full-day coverage</li>
+        <li><i class="fas fa-check"></i> Cinematic video</li>
+        <li><i class="fas fa-check"></i> Photo album</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <h3>Event Coverage</h3>
+      <p>From corporate events to concerts, we deliver professional documentation of your event's best moments.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Live coverage</li>
+        <li><i class="fas fa-check"></i> Quick turnaround</li>
+        <li><i class="fas fa-check"></i> Multi-camera setup</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-portrait"></i>
+      </div>
+      <h3>Portrait Sessions</h3>
+      <p>Professional headshots, family portraits, and personal branding photography with studio-quality results.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Studio & outdoor</li>
+        <li><i class="fas fa-check"></i> Professional retouching</li>
+        <li><i class="fas fa-check"></i> Multiple looks</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-globe"></i>
+      </div>
+      <h3>Travel & Lifestyle</h3>
+      <p>Document your adventures with stunning visual storytelling. Perfect for travel blogs, influencers, and brands.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Destination shoots</li>
+        <li><i class="fas fa-check"></i> Story-driven content</li>
+        <li><i class="fas fa-check"></i> Social media ready</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-utensils"></i>
+      </div>
+      <h3>Food & Product Photography</h3>
+      <p>Showcase your products or culinary creations with mouth-watering, professional photography.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> Styled shoots</li>
+        <li><i class="fas fa-check"></i> Commercial quality</li>
+        <li><i class="fas fa-check"></i> E-commerce ready</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-film"></i>
+      </div>
+      <h3>Videography & Editing</h3>
+      <p>Professional video production with cinematic editing. From short clips to full-length documentaries.</p>
+      <ul class="service-features">
+        <li><i class="fas fa-check"></i> 4K filming</li>
+        <li><i class="fas fa-check"></i> Cinematic color grading</li>
+        <li><i class="fas fa-check"></i> Professional sound design</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== STATS SECTION ===== -->
+<section class="stats">
+  <div class="stats-container">
+    <div class="stat-item">
+      <h3 class="stat-number">500+</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-item">
+      <h3 class="stat-number">200+</h3>
+      <p>Happy Clients</p>
+    </div>
+    <div class="stat-item">
+      <h3 class="stat-number">15+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-item">
+      <h3 class="stat-number">8</h3>
+      <p>Team Members</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <h2>Ready to Tell Your Story?</h2>
+  <p>Let's create something extraordinary together</p>
+  <a href="contact.html" class="cta-button cta-button-light">
+    <span>Get in Touch</span>
+    <i class="fas fa-envelope"></i>
+  </a>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>SHE</h4>
+      <p>South Hemisphere Entertainment</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="https://instagram.com/southhemisphereent" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/southhemisphereent" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/southhemisphere" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://youtube.com/@southhemisphere" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> South Hemisphere Entertainment. All rights reserved.</p>
+  </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/featured-work.js"></script>
 </body>
 </html>
